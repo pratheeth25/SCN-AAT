@@ -1,0 +1,171 @@
+[
+  {
+    "model": "M7",
+    "protocol": "chronological",
+    "seed": 0,
+    "feature_policy": "raw",
+    "features": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "n_rules": 7,
+    "target_unit": "kWh",
+    "test_mse_mwh2": 1861.960222590585,
+    "test_rmse_mwh": 43.15043710775807,
+    "test_mae_mwh": 33.034691349637676,
+    "test_r2": -0.2525710262183163,
+    "test_period": [
+      "2018-05-09",
+      "2019-06-27"
+    ]
+  },
+  {
+    "model": "M9",
+    "protocol": "chronological",
+    "seed": 0,
+    "feature_policy": "raw",
+    "features": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "n_rules": 9,
+    "target_unit": "kWh",
+    "test_mse_mwh2": 2477.487849845477,
+    "test_rmse_mwh": 49.77436940680893,
+    "test_mae_mwh": 39.38748482789856,
+    "test_r2": -0.6666465055879491,
+    "test_period": [
+      "2018-05-09",
+      "2019-06-27"
+    ]
+  },
+  {
+    "model": "M9_pso",
+    "protocol": "chronological",
+    "seed": 0,
+    "feature_policy": "raw",
+    "features": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "n_rules": 9,
+    "target_unit": "kWh",
+    "test_mse_mwh2": 2489.3385898490255,
+    "test_rmse_mwh": 49.89327198980866,
+    "test_mae_mwh": 39.22845482336957,
+    "test_r2": -0.6746186917751702,
+    "test_period": [
+      "2018-05-09",
+      "2019-06-27"
+    ]
+  },
+  {
+    "model": "M9_pso_ridge",
+    "protocol": "chronological",
+    "seed": 0,
+    "feature_policy": "raw",
+    "features": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "n_rules": 9,
+    "target_unit": "kWh",
+    "test_mse_mwh2": 2729.277183932331,
+    "test_rmse_mwh": 52.24248447319797,
+    "test_mae_mwh": 41.52878226902173,
+    "test_r2": -0.8360292994637477,
+    "test_period": [
+      "2018-05-09",
+      "2019-06-27"
+    ]
+  },
+  {
+    "model": "M9_tscv",
+    "protocol": "chronological",
+    "seed": 0,
+    "feature_policy": "no_year",
+    "features": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "n_rules": 9,
+    "target_unit": "kWh",
+    "test_mse_mwh2": 1525.2555637159894,
+    "test_rmse_mwh": 39.05452040053737,
+    "test_mae_mwh": 30.85538728487319,
+    "test_r2": -0.026064307663257402,
+    "test_period": [
+      "2018-05-09",
+      "2019-06-27"
+    ]
+  }
+]

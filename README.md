@@ -94,6 +94,22 @@ python scripts/run_all_experiments.py --list-models                      # all r
 
 The full set of options and the output-file formats are in [docs/implementation.md](docs/implementation.md).
 
+## Trained models
+
+`models/<protocol>_seed0/` holds the fitted `M7`, `M9`, `M9_pso`, `M9_pso_ridge` and `M9_tscv` models for the random and chronological splits.
+- **`manifest.json`** in each folder lists each model's input features, rule count, test period and test metrics.
+- **Each `.pt` file** holds the model weights, the input and target scalers, and that same metadata.
+
+```python
+from src.utils.persistence import load_it2
+model, meta = load_it2("models/random_seed0/M9_pso_ridge.pt")
+y_kwh = model.predict(X[meta["features"]].to_numpy(float))   # X: cleaned data table, prediction in kWh
+lower, upper = model.predict_interval(X[meta["features"]].to_numpy(float))
+```
+
+To re-create the models (or export another seed): `python scripts/export_models.py --seed 0`.
+The test scores match the seed-0 rows of `results/experiments/full_random_chrono_10seeds/runs.csv`. The one exception is `M9`, whose separate runs differ by about 0.1 %.
+
 ## Credits
 
 | What | Credit |
