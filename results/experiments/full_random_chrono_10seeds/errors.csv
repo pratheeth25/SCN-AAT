@@ -1,0 +1,1471 @@
+run_id,timestamp,model_name,protocol,seed,fold,error_type,error_message,traceback,config_json
+full_random_chrono_10seeds,2026-10-30T06:29:10,ANFIS0_improved,random,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:29:10,ANFIS1_improved,random,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:29:10,IT2_improved,random,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:29:10,RF_improved,random,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:29:10,SVM_improved,random,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:31:18,ANFIS0_improved,random,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:31:18,ANFIS1_improved,random,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:31:18,IT2_improved,random,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:31:18,RF_improved,random,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:31:18,SVM_improved,random,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:33:47,ANFIS0_improved,random,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:33:47,ANFIS1_improved,random,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:33:47,IT2_improved,random,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:33:47,RF_improved,random,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:33:47,SVM_improved,random,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:35:38,ANFIS0_improved,random,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:35:38,ANFIS1_improved,random,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:35:38,IT2_improved,random,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:35:38,RF_improved,random,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:35:38,SVM_improved,random,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:37:51,ANFIS0_improved,random,4,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:37:51,ANFIS1_improved,random,4,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:37:51,IT2_improved,random,4,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:37:51,RF_improved,random,4,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:37:51,SVM_improved,random,4,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:39:53,ANFIS0_improved,random,5,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:39:53,ANFIS1_improved,random,5,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:39:53,IT2_improved,random,5,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:39:53,RF_improved,random,5,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:39:53,SVM_improved,random,5,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:41:48,ANFIS0_improved,random,6,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:41:48,ANFIS1_improved,random,6,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:41:48,IT2_improved,random,6,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:41:48,RF_improved,random,6,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:41:48,SVM_improved,random,6,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:43:46,ANFIS0_improved,random,7,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:43:46,ANFIS1_improved,random,7,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:43:46,IT2_improved,random,7,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:43:46,RF_improved,random,7,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:43:46,SVM_improved,random,7,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:45:54,ANFIS0_improved,random,8,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:45:54,ANFIS1_improved,random,8,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:45:54,IT2_improved,random,8,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:45:54,RF_improved,random,8,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:45:54,SVM_improved,random,8,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:47:49,ANFIS0_improved,random,9,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:47:49,ANFIS1_improved,random,9,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:47:49,IT2_improved,random,9,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:47:49,RF_improved,random,9,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:47:49,SVM_improved,random,9,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:49:32,ANFIS0_improved,chronological,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:49:32,ANFIS1_improved,chronological,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:49:32,IT2_improved,chronological,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:49:32,RF_improved,chronological,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:49:32,SVM_improved,chronological,0,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:51:24,ANFIS0_improved,chronological,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:51:24,ANFIS1_improved,chronological,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:51:24,IT2_improved,chronological,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:51:24,RF_improved,chronological,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:51:24,SVM_improved,chronological,1,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:53:10,ANFIS0_improved,chronological,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:53:10,ANFIS1_improved,chronological,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:53:10,IT2_improved,chronological,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:53:10,RF_improved,chronological,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:53:10,SVM_improved,chronological,2,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:55:06,ANFIS0_improved,chronological,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:55:06,ANFIS1_improved,chronological,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:55:06,IT2_improved,chronological,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:55:06,RF_improved,chronological,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"
+full_random_chrono_10seeds,2026-10-30T06:55:06,SVM_improved,chronological,3,0,BrokenProcessPool,A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.,":\Users\prath\AppData\Roaming\Python\Python313\site-packages\sklearn\utils\parallel.py"", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 2072, in __call__
+    return output if self.return_generator else list(output)
+                                                ~~~~^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1682, in _get_outputs
+    yield from self._retrieve()
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1784, in _retrieve
+    self._raise_error_fast()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 1859, in _raise_error_fast
+    error_job.get_result(self.timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 758, in get_result
+    return self._return_or_raise()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File ""C:\Users\prath\AppData\Roaming\Python\Python313\site-packages\joblib\parallel.py"", line 773, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+","{""family"": ""improved"", ""mode"": ""full""}"

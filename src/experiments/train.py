@@ -1,4 +1,8 @@
-"""Single-run training harness (config-driven)."""
+"""Single-run training harness (config-driven).
+
+The IT2_TSK_ANFIS model handles its own input and target standardisation
+internally, so this module only owns the data splitting and model instantiation.
+"""
 
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -35,14 +39,28 @@ def run_it2_training(
 ):
     """
     Split data, train IT2-ANFIS, return model and splits.
+
+    The returned model's predict() and predict_interval() methods output
+    values in the *original* target units (KWh), because IT2_TSK_ANFIS
+    standardises y internally and inverse-transforms on the way out.
+
+    Returns
+    -------
+    model : IT2_TSK_ANFIS
+    splits : tuple  (X_tr, X_val, X_test, y_tr, y_val, y_test)
+        All arrays are in original (un-scaled) units.
     """
     n_rules = n_rules or DEFAULT_N_RULES
+    X = np.asarray(X, dtype=np.float64)
+    y = np.asarray(y, dtype=np.float64).ravel()
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state
     )
     X_tr, X_val, y_tr, y_val = train_test_split(
         X_train, y_train, test_size=val_size, random_state=random_state
     )
+
     model = IT2_TSK_ANFIS(n_rules=n_rules, X=X_tr, verbose=verbose)
     model.fit(
         X_tr, y_tr, X_val, y_val,

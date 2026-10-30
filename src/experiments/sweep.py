@@ -1,6 +1,7 @@
 """Parameter sweep: rules 1..K with multiple random seeds."""
 
 import numpy as np
+import torch
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
@@ -12,27 +13,22 @@ from ..config import (
     RULE_SWEEP_N_SEEDS,
 )
 from ..models.it2_anfis import IT2_TSK_ANFIS
-from ..models.anfis_first import ANFISFirst
+from ..models.anfis_first import FirstOrderANFIS
 
 
-def _run_sweep_anfis_first(X, y, n_rules, seed, X_test, y_test):
-    X_train, _, y_train, _ = train_test_split(X, y, test_size=TEST_SIZE, random_state=seed)
-    X_tr, X_val, y_tr, y_val = train_test_split(
-        X_train, y_train, test_size=VAL_SIZE, random_state=seed
-    )
-    np.random.seed(seed)
-    model = ANFISFirst(n_clusters=n_rules, X=X_tr)
-    model.fit(X_tr, y_tr, X_val, y_val, epochs=100, lr=0.01, patience=15, verbose=False)
+def _run_sweep_anfis_first(X_pool, y_pool, n_rules, seed, X_test, y_test):
+    # Train/val come ONLY from the pool (train+val rows); X_test is never seen.
+    model = FirstOrderANFIS(n_rules=n_rules, random_state=seed)
+    model.fit(X_pool, y_pool)
     return mean_squared_error(y_test, model.predict(X_test))
 
 
-def _run_sweep_it2(X, y, n_rules, seed, X_test, y_test):
-    X_train, _, y_train, _ = train_test_split(X, y, test_size=TEST_SIZE, random_state=seed)
+def _run_sweep_it2(X_pool, y_pool, n_rules, seed, X_test, y_test):
     X_tr, X_val, y_tr, y_val = train_test_split(
-        X_train, y_train, test_size=VAL_SIZE, random_state=seed
+        X_pool, y_pool, test_size=VAL_SIZE, random_state=seed
     )
-    np.random.seed(seed)
-    model = IT2_TSK_ANFIS(n_rules=n_rules, X=X_tr, verbose=False)
+    torch.manual_seed(seed)
+    model = IT2_TSK_ANFIS(n_rules=n_rules, X=X_tr, verbose=False, random_state=seed)
     model.fit(
         X_tr, y_tr, X_val, y_val,
         epochs=50, patience=20, batch_size=64,
@@ -57,13 +53,11 @@ def sweep_rules(
     model_type: 'it2' or 'anfis_first'.
     Returns dict with keys: n_rules_list, mse_mean, mse_std, mse_per_run (list of lists).
     """
-    X_train, X_test, y_train, y_test = train_test_split(
+    X, y = np.asarray(X, dtype=float), np.asarray(y, dtype=float).ravel()
+    # One fixed held-out test set; every (n_rules, seed) run trains on the remaining rows only.
+    X_pool, X_test, y_pool, y_test = train_test_split(
         X, y, test_size=test_size, random_state=base_seed
     )
-    X_full = np.vstack([X_train, X_test])
-    y_full = np.concatenate([y_train, y_test])
-    # Re-split so test is fixed
-    _, X_test, _, y_test = train_test_split(X_full, y_full, test_size=test_size, random_state=base_seed)
 
     n_rules_list = list(range(n_rules_min, n_rules_max + 1))
     mse_per_run = []
@@ -73,7 +67,7 @@ def sweep_rules(
     for n_rules in n_rules_list:
         row = []
         for seed in seeds:
-            mse = runner(X_full, y_full, n_rules, seed, X_test, y_test)
+            mse = runner(X_pool, y_pool, n_rules, seed, X_test, y_test)
             row.append(mse)
         mse_per_run.append(row)
 

@@ -46,7 +46,7 @@ data/processed/
 !data/processed/.gitkeep
 
 # Models and outputs
-models/
+/models/
 *.pkl
 *.joblib
 *.pt
@@ -54,9 +54,16 @@ models/
 figures/*.png
 figures/*.pdf
 !figures/.gitkeep
-results/*.csv
-results/*.json
+# results: only the two runs used by docs/ and the dashboard are versioned
+results/*
 !results/.gitkeep
+!results/experiments/
+results/experiments/*
+!results/experiments/full_random_chrono_10seeds/
+!results/experiments/full_rolling_3seeds/
+
+# third-party paper PDF (cite / link instead of redistributing)
+*.pdf
 
 # OS
 .DS_Store

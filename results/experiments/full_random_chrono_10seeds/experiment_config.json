@@ -1,0 +1,1393 @@
+{
+  "run_id": "full_random_chrono_10seeds",
+  "started": "2026-10-30T06:27:42",
+  "mode": "full",
+  "protocols": [
+    "random",
+    "chronological"
+  ],
+  "models": [
+    "Dummy",
+    "RF_original",
+    "SVM_original",
+    "ANFIS0_original",
+    "ANFIS1_original",
+    "IT2_original",
+    "M7",
+    "ANFIS0_improved",
+    "ANFIS1_improved",
+    "IT2_improved",
+    "RF_improved",
+    "SVM_improved",
+    "M9",
+    "M9_pso",
+    "M9_pso_ridge",
+    "PSO_B_rulecount",
+    "PSO_C_fixed7",
+    "M7_noyear",
+    "M7_noyear_ridge",
+    "M9_tscv"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "rolling": {
+    "folds": 5,
+    "initial": 0.5
+  },
+  "budgets": {
+    "targeted": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pso": {
+        "n_particles": 20,
+        "max_iter": 40,
+        "patience": 10
+      }
+    },
+    "pso_search": {
+      "stage1": {
+        "n_particles": 16,
+        "max_iter": 20,
+        "patience": 6
+      },
+      "stage2": {
+        "n_particles": 24,
+        "max_iter": 60,
+        "patience": 12
+      },
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "k_values": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "finetune_epochs": 100
+    }
+  },
+  "fitness_folds": 3,
+  "lambda_rule": 0.005,
+  "args": {
+    "mode": "full",
+    "protocols": "('random', 'chronological')",
+    "models": "('all',)",
+    "seeds": "(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)",
+    "out_dir": "None",
+    "run_id": "full_random_chrono_10seeds",
+    "rolling_folds": "5",
+    "rolling_initial": "0.5",
+    "pso_particles": "None",
+    "pso_iters": "None",
+    "fitness_folds": "3",
+    "lambda_rule": "0.005",
+    "fail_fast": "False",
+    "data_path": "None"
+  },
+  "dataset": {
+    "path": "C:\\XUQ\\data\\raw\\Data-Melbourne_F_fixed.csv",
+    "sha256": "dcece98f82efae9248e4a413487533b34a7496fc1668b82a7d8c672495e46e47",
+    "n_rows": 1382,
+    "first_date": "2014-01-01",
+    "last_date": "2019-06-27",
+    "target": "Energy Consumption",
+    "fit_unit": "kWh",
+    "report_unit": "MWh",
+    "columns": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "SLP",
+      "H",
+      "PP",
+      "VV",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day",
+      "Energy Consumption"
+    ]
+  },
+  "versions": {
+    "python": "3.13.2",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.7.1",
+    "scipy": "1.16.1",
+    "torch": "2.14.0+cu126"
+  },
+  "device": "cpu",
+  "model_registry": {
+    "Dummy": {
+      "name": "Dummy",
+      "family": "simple",
+      "version": "baseline",
+      "fuzzy": false,
+      "description": "training-mean predictor"
+    },
+    "RF_original": {
+      "name": "RF_original",
+      "family": "simple",
+      "version": "original",
+      "fuzzy": false,
+      "description": "Random Forest, 300 trees, MI-selected raw features"
+    },
+    "SVM_original": {
+      "name": "SVM_original",
+      "family": "simple",
+      "version": "original",
+      "fuzzy": false,
+      "description": "SVR(rbf) on standardised inputs, raw target (as in the original pipeline)"
+    },
+    "ANFIS0_original": {
+      "name": "ANFIS0_original",
+      "family": "anfis_original",
+      "version": "original",
+      "fuzzy": true,
+      "description": "zero-order ANFIS, 7 rules, raw features"
+    },
+    "ANFIS1_original": {
+      "name": "ANFIS1_original",
+      "family": "anfis_original",
+      "version": "original",
+      "fuzzy": true,
+      "description": "first-order ANFIS, 7 rules, raw features"
+    },
+    "IT2_original": {
+      "name": "IT2_original",
+      "family": "it2_original",
+      "version": "original",
+      "fuzzy": true,
+      "description": "IT2-ANFIS 7 rules, original recipe (init seed 42)"
+    },
+    "M7": {
+      "name": "M7",
+      "family": "it2_original",
+      "version": "original",
+      "fuzzy": true,
+      "description": "reference baseline: IT2-ANFIS 7 rules, LHS init, frozen antecedents, Adam+L1/L2"
+    },
+    "ANFIS0_improved": {
+      "name": "ANFIS0_improved",
+      "family": "improved",
+      "version": "improved",
+      "fuzzy": true,
+      "description": "zero-order ANFIS, calendar features, tuned"
+    },
+    "ANFIS1_improved": {
+      "name": "ANFIS1_improved",
+      "family": "improved",
+      "version": "improved",
+      "fuzzy": true,
+      "description": "first-order ANFIS, calendar features, tuned"
+    },
+    "IT2_improved": {
+      "name": "IT2_improved",
+      "family": "improved",
+      "version": "improved",
+      "fuzzy": true,
+      "description": "IT2-ANFIS, calendar features, k-means init, ridge consequents, tuned"
+    },
+    "RF_improved": {
+      "name": "RF_improved",
+      "family": "improved",
+      "version": "improved",
+      "fuzzy": false,
+      "description": "Random Forest on calendar features"
+    },
+    "SVM_improved": {
+      "name": "SVM_improved",
+      "family": "improved",
+      "version": "improved",
+      "fuzzy": false,
+      "description": "SVR on scaled target, CV-tuned"
+    },
+    "M9": {
+      "name": "M9",
+      "family": "targeted9",
+      "version": "targeted",
+      "fuzzy": true,
+      "description": "M7 + 2 residual-targeted rules, Adam consequents"
+    },
+    "M9_pso": {
+      "name": "M9_pso",
+      "family": "targeted9",
+      "version": "targeted",
+      "fuzzy": true,
+      "description": "M9 with the 2 new rules' antecedents tuned by PSO (K = 9 fixed)"
+    },
+    "M9_pso_ridge": {
+      "name": "M9_pso_ridge",
+      "family": "targeted9",
+      "version": "targeted",
+      "fuzzy": true,
+      "description": "M9_pso with ridge-solved consequents"
+    },
+    "PSO_B_rulecount": {
+      "name": "PSO_B_rulecount",
+      "family": "pso_search",
+      "version": "pso",
+      "fuzzy": true,
+      "description": "PSO on all antecedents with rule-count search K in 3..15"
+    },
+    "PSO_C_fixed7": {
+      "name": "PSO_C_fixed7",
+      "family": "pso_search",
+      "version": "pso",
+      "fuzzy": true,
+      "description": "PSO on all antecedents, rule count fixed at 7"
+    },
+    "M7_noyear": {
+      "name": "M7_noyear",
+      "family": "temporal",
+      "version": "temporal",
+      "fuzzy": true,
+      "description": "M7 recipe on forecast-safe features (raw year removed)"
+    },
+    "M7_noyear_ridge": {
+      "name": "M7_noyear_ridge",
+      "family": "temporal",
+      "version": "temporal",
+      "fuzzy": true,
+      "description": "M7_noyear antecedents, ridge consequents, lambda by expanding-window CV"
+    },
+    "M9_tscv": {
+      "name": "M9_tscv",
+      "family": "temporal",
+      "version": "temporal",
+      "fuzzy": true,
+      "description": "M9_pso_ridge on no_year features with rolling-origin PSO fitness and expanding-window ridge CV"
+    }
+  },
+  "feature_policies": {
+    "raw": "MI>0 on training rows, all columns incl. year",
+    "no_year": "MI>0 on training rows, raw `year` removed"
+  },
+  "splits": [
+    {
+      "protocol": "random",
+      "seed": 0,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-12",
+        "2019-06-25"
+      ],
+      "test_range": [
+        "2014-01-02",
+        "2019-06-27"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 1,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-27"
+      ],
+      "val_range": [
+        "2014-01-02",
+        "2019-06-20"
+      ],
+      "test_range": [
+        "2014-01-06",
+        "2019-06-18"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 2,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-25"
+      ],
+      "val_range": [
+        "2014-01-06",
+        "2019-06-27"
+      ],
+      "test_range": [
+        "2014-01-12",
+        "2019-06-26"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 3,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-07",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-01",
+        "2019-06-27"
+      ],
+      "test_range": [
+        "2014-01-02",
+        "2019-06-03"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 4,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-24"
+      ],
+      "val_range": [
+        "2014-01-24",
+        "2019-06-27"
+      ],
+      "test_range": [
+        "2014-01-08",
+        "2019-06-18"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 5,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-05",
+        "2019-06-18"
+      ],
+      "test_range": [
+        "2014-01-06",
+        "2019-06-27"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 6,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-02",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-06",
+        "2019-06-02"
+      ],
+      "test_range": [
+        "2014-01-01",
+        "2019-06-27"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 7,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-02",
+        "2019-06-17"
+      ],
+      "test_range": [
+        "2014-01-14",
+        "2019-06-27"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 8,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-27"
+      ],
+      "val_range": [
+        "2014-01-07",
+        "2019-06-25"
+      ],
+      "test_range": [
+        "2014-01-14",
+        "2019-06-20"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "random",
+      "seed": 9,
+      "fold": 0,
+      "n_train": 884,
+      "n_val": 221,
+      "n_test": 277,
+      "train_range": [
+        "2014-01-01",
+        "2019-06-26"
+      ],
+      "val_range": [
+        "2014-01-07",
+        "2019-06-11"
+      ],
+      "test_range": [
+        "2014-01-05",
+        "2019-06-27"
+      ],
+      "contiguous": false
+    },
+    {
+      "protocol": "chronological",
+      "seed": 0,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 1,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 2,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 3,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 4,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 5,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 6,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 7,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 8,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    },
+    {
+      "protocol": "chronological",
+      "seed": 9,
+      "fold": 0,
+      "n_train": 885,
+      "n_val": 221,
+      "n_test": 276,
+      "train_range": [
+        "2014-01-01",
+        "2017-06-27"
+      ],
+      "val_range": [
+        "2017-06-28",
+        "2018-05-08"
+      ],
+      "test_range": [
+        "2018-05-09",
+        "2019-06-27"
+      ],
+      "contiguous": true
+    }
+  ],
+  "features": {
+    "random|0|0|raw": [
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|0|0|no_year": [
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|1|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "PP",
+      "V",
+      "VM",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|1|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "PP",
+      "V",
+      "VM",
+      "month",
+      "day"
+    ],
+    "random|2|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "TN",
+      "T",
+      "TM",
+      "V",
+      "VM",
+      "month"
+    ],
+    "random|2|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "V",
+      "VM",
+      "month"
+    ],
+    "random|3|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "V",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|3|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|4|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month"
+    ],
+    "random|4|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|5|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "PP",
+      "V",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|5|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "PP",
+      "V",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|6|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "TM",
+      "Tm",
+      "H",
+      "PP",
+      "V",
+      "VM",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|6|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "Tm",
+      "H",
+      "PP",
+      "V",
+      "VM",
+      "month",
+      "day"
+    ],
+    "random|7|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "TN",
+      "T",
+      "Tm",
+      "H",
+      "PP",
+      "VV",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|7|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "TN",
+      "T",
+      "Tm",
+      "H",
+      "PP",
+      "VV",
+      "month",
+      "day"
+    ],
+    "random|8|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "V",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|8|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "VV",
+      "V",
+      "VG",
+      "month",
+      "day"
+    ],
+    "random|9|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "PP",
+      "V",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "random|9|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "H",
+      "PP",
+      "V",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|0|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|0|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|1|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|1|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|2|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|2|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|3|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|3|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|4|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|4|0|calendar": "calendar table",
+    "chronological|4|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|5|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|5|0|calendar": "calendar table",
+    "chronological|5|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|6|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|6|0|calendar": "calendar table",
+    "chronological|6|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|7|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|7|0|calendar": "calendar table",
+    "chronological|7|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|8|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|8|0|calendar": "calendar table",
+    "chronological|8|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ],
+    "chronological|9|0|raw": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "year",
+      "month",
+      "day"
+    ],
+    "chronological|9|0|calendar": "calendar table",
+    "chronological|9|0|no_year": [
+      "avg_outflow",
+      "avg_inflow",
+      "Am",
+      "BOD",
+      "COD",
+      "TN",
+      "T",
+      "TM",
+      "Tm",
+      "H",
+      "V",
+      "VM",
+      "VG",
+      "month",
+      "day"
+    ]
+  },
+  "unsupported": {},
+  "finished": "2026-10-30T07:03:08",
+  "status": "finished"
+}
