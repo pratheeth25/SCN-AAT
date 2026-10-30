@@ -45,11 +45,11 @@ data/processed/
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 
-# Models and outputs (the exported 7 / 9 / 9 + PSO models in models/ are versioned)
+# Models and outputs
+/models/
 *.pkl
 *.joblib
 *.pt
-!models/**/*.pt
 *.pth
 figures/*.png
 figures/*.pdf

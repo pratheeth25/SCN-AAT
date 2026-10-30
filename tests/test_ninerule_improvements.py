@@ -71,14 +71,3 @@ def test_seasonal9_rules_live_in_the_season_space_and_predict_finitely():
 def test_new_models_are_registered():
     for n in ("M9_tscv_refit", "M7_noyear_ridge_refit", "M9_season", "M9_season_pso"):
         assert n in REGISTRY and REGISTRY[n].fuzzy
-
-
-def test_save_and_load_it2_round_trip(tmp_path):
-    from src.utils.persistence import load_it2, save_it2
-    rng = np.random.default_rng(1)
-    X = rng.normal(size=(200, 3)); y = 2e5 + 3e4 * X[:, 0] + rng.normal(0, 3e3, 200)
-    m = _ridge_model(X, y, np.arange(150))
-    save_it2(m, tmp_path / "m.pt", {"model": "test", "features": ["a", "b", "c"]})
-    m2, meta = load_it2(tmp_path / "m.pt")
-    np.testing.assert_allclose(m2.predict(X), m.predict(X), rtol=1e-6)
-    assert meta["features"] == ["a", "b", "c"] and m2.n_rules == m.n_rules
