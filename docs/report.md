@@ -59,6 +59,10 @@ These relationships are nonlinear, noisy and change over time. The task is a reg
 
 Fuzzy rule-based models address the third point directly, because every prediction is built from readable IF–THEN rules.
 
+![Figure 1: Daily energy consumption, 2014–2019, with the chronological train / validation / test periods shaded. The level and spread shift between periods.](figures/fig1_data_and_split.png)
+
+*Figure 1: Daily energy consumption, 2014–2019, with the chronological train / validation / test periods shaded. The level and spread shift between periods.*
+
 ### 2.2 Motivation for the Project
 
 Khaled et al. (2026) proposed a 7-rule interval type-2 neuro-fuzzy model for this plant. It gives explainable predictions and an uncertainty interval through the footprint of uncertainty of its membership functions. Its rules, however, are placed by stratified sampling of the input space and then frozen. Nothing checks whether they cover the conditions in which the model makes its largest errors.
@@ -117,6 +121,10 @@ Answering them compares a non-hybrid neuro-fuzzy design with a hybrid neuro-fuzz
 ## 4. System Architecture
 
 ### 4.1 Overall System Block Diagram
+
+![Figure 2: Overall system: shared pre-processing and splits, the non-hybrid (7- and 9-rule) and hybrid (9-rule + PSO) models, evaluation and stored results.](figures/fig2_system_architecture.png)
+
+*Figure 2: Overall system: shared pre-processing and splits, the non-hybrid (7- and 9-rule) and hybrid (9-rule + PSO) models, evaluation and stored results.*
 
 ```
  ┌─────────────────────┐   ┌──────────────────────────┐   ┌───────────────────────────────┐
@@ -195,6 +203,10 @@ Answering them compares a non-hybrid neuro-fuzzy design with a hybrid neuro-fuzz
 2. For each calendar group with at least 20 rows, compute t = mean(r) / (sd(r)/√n).
 3. Take the two groups with the largest |t| ≥ 3. If fewer qualify, use k-means (k = 2) on the largest-error rows.
 4. Build each new rule from its group: centre = the group's mean input; σ = the group's sd, floored at the baseline σ; FOU = the baseline's.
+
+![Figure 3: Interval type-2 Gaussian membership function with uncertain mean [c1, c2]: upper MF, lower MF and the footprint of uncertainty between them.](figures/fig3_it2_membership.png)
+
+*Figure 3: Interval type-2 Gaussian membership function with uncertain mean [c1, c2]: upper MF, lower MF and the footprint of uncertainty between them.*
 
 ### 5.3 System Architecture of Non-Hybrid Model
 
@@ -372,6 +384,14 @@ MSE in MWh², mean ± sd.
 | 9 rules + PSO + ridge (M9_pso_ridge) | hybrid | **1556.9** | 2231.7 | 2411.6 |
 | 9 rules + PSO, time-aware (M9_tscv) | hybrid | 1651.7 | **1531.7** | **2281.0** |
 
+![Figure 4: Mean test MSE (± sd) of the five models under each protocol. The dashed line marks the 7-rule model.](figures/fig4_mse_comparison.png)
+
+*Figure 4: Mean test MSE (± sd) of the five models under each protocol. The dashed line marks the 7-rule model.*
+
+![Figure 5: Test MSE of every seed. Grey lines join the same seed across models, diamonds are means. On the chronological split the time-aware 9-rule + PSO model is better than the 7-rule model for every seed.](figures/fig5_per_seed.png)
+
+*Figure 5: Test MSE of every seed. Grey lines join the same seed across models, diamonds are means. On the chronological split the time-aware 9-rule + PSO model is better than the 7-rule model for every seed.*
+
 Paired MSE tests vs 7 rules (Holm-adjusted p within each protocol):
 
 | Protocol | 9 rules | 9 rules + PSO | 9 rules + PSO + ridge | 9 rules + PSO, time-aware |
@@ -405,6 +425,10 @@ Mean seconds per run on CPU. The 9-rule times include training the 7-rule model 
 | 9 rules + PSO | 10.07 | 6.94 | 11.24 |
 | 9 rules + PSO + ridge | 7.92 | 5.72 | 9.37 |
 | 9 rules + PSO, time-aware | 19.20 | 13.98 | 18.85 |
+
+![Figure 6: Left: change in MSE from the random to the chronological split (lower means more robust to a time shift). Right: mean training time per run on CPU.](figures/fig6_robustness_and_time.png)
+
+*Figure 6: Left: change in MSE from the random to the chronological split (lower means more robust to a time shift). Right: mean training time per run on CPU.*
 
 **Relative cost:**
 - The hybrid models cost 4–12× the 7-rule training time.
@@ -470,6 +494,10 @@ Why the models behave this way:
 5. **Uncertainty output.** All models give an interval [y_L, y_U] from the footprint of uncertainty.
    - It measures *structural* uncertainty and covers fewer than 10 % of test values.
    - It must be calibrated (for example split-conformal prediction, about 90 % coverage on the random split) before being used as a prediction interval.
+
+![Figure 7: Chronological test period, seed 0: actual energy and predictions of the 7-rule, 9-rule + PSO and time-aware 9-rule + PSO models (7-day means).](figures/fig7_chrono_predictions.png)
+
+*Figure 7: Chronological test period, seed 0: actual energy and predictions of the 7-rule, 9-rule + PSO and time-aware 9-rule + PSO models (7-day means).*
 
 **Dashboard.** `python -m streamlit run streamlit_app.py` shows all of these comparisons from the stored result files.
 
