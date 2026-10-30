@@ -62,8 +62,11 @@ results/experiments/*
 !results/experiments/full_random_chrono_10seeds/
 !results/experiments/full_rolling_3seeds/
 
-# third-party paper PDF (cite / link instead of redistributing)
+# third-party material: never commit the dataset or the research paper (link and cite instead)
+data/raw/*
+!data/raw/.gitkeep
 *.pdf
+2601.18897v1.pdf
 
 # OS
 .DS_Store

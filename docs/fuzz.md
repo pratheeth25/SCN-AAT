@@ -1,9 +1,10 @@
 # Fuzzy logic used in this project
 
-> **Attribution.** The IT2-ANFIS model described here comes from Khaled, Mallak, Kaymak and Genga (2026,
-> [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)) and its code base
-> [QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ). The general fuzzy-logic concepts are credited to the
-> authors in §10.
+> **Attribution.** The IT2-ANFIS method described here comes from Khaled, Mallak, Kaymak and Genga (2026,
+> [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)). Their code base is
+> [QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ). The model code used in this project was written from the
+> paper's equations, because the original repository does not include its model files. The general fuzzy-logic concepts
+> are credited to the authors in §10.
 
 This document explains every fuzzy-logic and soft-computing idea behind the 7-rule, 9-rule and 9-rule + PSO models,
 from fuzzy sets to interval type-2 TSK ANFIS. Each idea also says where it appears in the code.

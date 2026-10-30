@@ -92,7 +92,8 @@ order = list(LABEL.values())
 # ------------------------------- header -------------------------------
 
 st.title("IT2-ANFIS: 7 rules vs 9 rules vs 9 rules + PSO")
-st.markdown(f"- **{LABEL['M7']}**: the paper's 7-rule model (Khaled et al., 2026; original code QusaiKhaled/XUQ).\n"
+st.markdown(f"- **{LABEL['M7']}**: the 7-rule model of Khaled et al. (2026), re-implemented from the paper's "
+            "equations (baseline numbers may differ from the paper's).\n"
             f"- **{LABEL['M9']}**: two rules added where the 7-rule model has the largest residuals.\n"
             f"- **{LABEL[pso]}**: {PSO_VARIANTS[pso]}.")
 st.caption("Read from: " + ", ".join(f"`{r}`" for r in sel_runs))

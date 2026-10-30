@@ -3,11 +3,13 @@
 ## Energy Consumption Prediction for a Wastewater Treatment Plant: 7-Rule and 9-Rule Interval Type-2 Neuro-Fuzzy Models with and without Particle Swarm Optimisation
 
 > **Attribution.** This mini project builds on existing work.
-> - **Method and base model:** the IT2-ANFIS and the 7-rule model are by Khaled, Mallak, Kaymak and Genga (2026) [1].
-> - **Code base:** taken from the original repository, https://github.com/QusaiKhaled/XUQ [2].
+> - **Method:** the IT2-ANFIS method and the 7-rule design are by Khaled, Mallak, Kaymak and Genga (2026) [1].
+> - **Code base:** the data pipeline and project structure come from the original repository, https://github.com/QusaiKhaled/XUQ [2].
+>   That repository does not include its model files, so the IT2-ANFIS model code was written in this project from the
+>   paper's equations. **The 7-rule baseline results may therefore differ from those reported in the paper.**
 > - **Dataset:** by Bagherzadeh et al. [3, 4].
 >
-> Only the 9-rule and 9-rule + PSO extensions, the experiments and this write-up were added in this project.
+> This project added the model implementation, the 9-rule and 9-rule + PSO extensions, the experiments and this write-up.
 
 ---
 
@@ -17,7 +19,7 @@ Wastewater treatment plants (WWTPs) use 1–3 % of global electricity, so predic
 
 **Systems compared:**
 - **Non-hybrid systems:** neuro-fuzzy models trained by gradient descent alone.
-  - the 7-rule IT2-ANFIS of Khaled et al. (2026), from the original code repository;
+  - the 7-rule IT2-ANFIS of Khaled et al. (2026), re-implemented from the paper's equations;
   - a 9-rule IT2-ANFIS, with two rules added where the 7-rule model makes systematic errors.
 - **Hybrid system:** the 9-rule IT2-ANFIS combined with Particle Swarm Optimisation (PSO). The swarm tunes the two new rules and least squares solves the rule outputs.
 
@@ -168,7 +170,7 @@ Answering them compares a non-hybrid neuro-fuzzy design with a hybrid neuro-fuzz
 - **Hybrid** adds PSO.
 
 **The two non-hybrid models:**
-- **7 rules (M7):** the base paper's IT2-ANFIS, as implemented in the original repository [2]. Seven rules are spread evenly over each input's range and frozen. Each rule's linear output is learned by Adam.
+- **7 rules (M7):** the base paper's IT2-ANFIS, implemented in this project from the paper's equations [1]. The original repository [2] does not include its model code. Seven rules are spread evenly over each input's range and frozen. Each rule's linear output is learned by Adam.
 - **9 rules (M9):** M7 plus two rules aimed at its systematic errors. The training residuals of M7 are grouped by calendar month, year and weekend. The two groups with the most significant mean error (for example August and January) each receive a new rule centred on that group's typical input. The 7 original rules are kept unchanged, and all 9 rules' outputs are retrained by Adam.
 
 ### 5.2 Algorithms Used
@@ -239,7 +241,7 @@ MSE in MWh², mean ± sd. Source: `results/experiments/full_random_chrono_10seed
 | 9 rules (M9) | 1610.5 ± 136.5 (R² 0.180) | 2351.2 ± 117.4 | 2690.8 ± 620.3 |
 
 **Observations:**
-- **The 7-rule model is at the paper's accuracy level:** 1616 vs a reported 1671; the splits differ.
+- **The 7-rule model is at the paper's accuracy level:** 1616 vs a reported 1671. It is an independent implementation with frozen rule positions, Adam training and a learned q, on different splits, so a discrepancy with the paper's baseline is expected.
 - **Adding two residual-targeted rules without optimisation gives no gain:** −0.4 % on the random split (p = 0.71), +2.0 % on rolling (p = 0.76).
 - **It is significantly worse on the future test year:** +15.1 %, Holm p = 0.002. The groups it targets in 2014–2017 (May, August) do not repeat in 2018–19.
 
@@ -478,7 +480,7 @@ Why the models behave this way:
 ### 9.1 Summary of Work
 
 **Work done:**
-- The 7-rule interval type-2 neuro-fuzzy model of Khaled et al. (2026), taken from the original repository [2], was re-run under three protocols. It reaches the paper's accuracy (1616 vs 1671 MWh²).
+- The 7-rule interval type-2 neuro-fuzzy model of Khaled et al. (2026) was implemented from the paper's equations, because the original repository [2] does not include its model files. It reaches the paper's accuracy level (1616 vs 1671 MWh²), though the baseline numbers are not identical to the paper's.
 - It was extended to a 9-rule model, with two rules placed by residual analysis (non-hybrid).
 - A 9-rule + PSO hybrid was built, in which a particle swarm optimises the new rules and ridge least squares solves the rule outputs.
 - All models were compared on identical splits under random, chronological and rolling-origin protocols with paired tests.
@@ -513,7 +515,8 @@ The optimiser and the evaluation design matter more than the number of rules.
 
 - The IT2-ANFIS method, the 7-rule model and the original code base are the work of Qusai Khaled, Bahjat Mallak,
   Uzay Kaymak and Laura Genga (Eindhoven University of Technology and Haskoning) [1, 2]. This project uses and
-  extends their code; all rights to the original code remain with its author.
+  extends their published code (data pipeline and project structure); all rights to that code remain with its author.
+  The model implementation was written in this project from the paper, because the original repository does not include it.
 - The Melbourne Eastern Treatment Plant dataset was published by Faramarz Bagherzadeh and co-authors [3, 4].
 
 ## 11. References

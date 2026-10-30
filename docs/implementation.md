@@ -2,15 +2,19 @@
 
 > **Attribution.** This project builds on the original code base
 > [QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ) by Qusai Khaled. It also builds on the paper by Khaled, Mallak, Kaymak and Genga
-> (2026, [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)), which owns the IT2-ANFIS method. The original code also supplies the data
-> pipeline and the 7-rule model. Dataset: Bagherzadeh (2021), [doi:10.17632/pprkvz3vbd.1](https://doi.org/10.17632/pprkvz3vbd.1).
+> (2026, [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)), which owns the IT2-ANFIS method. The original code supplies the data
+> pipeline, the configuration and the project layout. Dataset: Bagherzadeh (2021), [doi:10.17632/pprkvz3vbd.1](https://doi.org/10.17632/pprkvz3vbd.1).
+>
+> **Model code.** The original repository does not publish its model files, because its `.gitignore` excluded `models/`.
+> All models in `src/models/`, including the 7-rule IT2-ANFIS, were therefore implemented here from the paper's equations.
+> Baseline results may differ from the paper's; see §5 and [results.md](results.md) §6.
 
 How the three compared IT2-ANFIS models are built in this repository, from the raw CSV to the dashboard.
 The fuzzy-logic theory behind them is in [fuzz.md](fuzz.md); the numbers are in [results.md](results.md).
 
 | Name in code | Short name | What it is |
 |---|---|---|
-| `M7` | 7 rules | The 7-rule interval type-2 TSK ANFIS of Khaled et al. (2026), as implemented in the original repository |
+| `M7` | 7 rules | The 7-rule interval type-2 TSK ANFIS of Khaled et al. (2026), re-implemented from the paper's equations |
 | `M9` | 9 rules | `M7` + 2 rules placed where the 7-rule model makes systematic errors |
 | `M9_pso` | 9 rules + PSO | `M9`, with the 2 new rules tuned by Particle Swarm Optimisation |
 | `M9_pso_ridge` | 9 rules + PSO + ridge | `M9_pso`, with closed-form ridge consequents instead of Adam |
@@ -108,6 +112,17 @@ The fuzzy-logic theory behind them is in [fuzz.md](fuzz.md); the numbers are in 
 - Optimiser: Adam with batch size 64, up to 100 epochs (`IT2_EPOCHS`).
 - Loss: MSE + L1 (0.005) + L2 (0.01) on the consequents.
 - Early stopping on validation MSE, patience 30.
+
+**Differences from the paper's training:**
+
+| | Paper | Here |
+|---|---|---|
+| Rule positions (c1, c2) | trained (autodiff, gradient clipping) | frozen after placement |
+| Consequent optimiser | mini-batch gradient descent, adaptive learning rate | Adam |
+| L1 / L2 | 0.05 / 0.001 | 0.005 / 0.01 |
+| q | fixed at 0.5 | learned, starts at 0.5 |
+
+This model therefore scores 1616 MWh² on the random split, against the paper's reported 1671 MWh².
 
 **Size:** 3·7·F antecedent values + 7·(F + 1) consequents + q. That averages 375 parameters on the random split (F = 9–15 selected inputs), 100 of them trained.
 

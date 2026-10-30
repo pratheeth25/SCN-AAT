@@ -5,14 +5,20 @@
 > *Explainable Uncertainty Quantification for Wastewater Treatment Energy Prediction via Interval Type-2
 > Neuro-Fuzzy System* (Khaled, Mallak, Kaymak and Genga, 2026, [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)).
 > The original authors own the IT2-ANFIS method, the original code base and the research idea. The dataset belongs to
-> its creators (see [Dataset](#dataset)). This fork only adds experiments on top of their work; see [Credits](#credits).
+> its creators (see [Dataset](#dataset)). See [Credits](#credits).
+>
+> **Note on the model code.** The original repository does not include the model implementations: its `.gitignore`
+> excluded every `models/` folder, so `src/models/` was never published. The IT2-ANFIS and the other model files in
+> `src/models/` were therefore **implemented in this project** from the equations in the paper. They are not the
+> authors' code, and the 7-rule baseline results **may differ from the paper's** (see [Differences from the
+> paper](#differences-from-the-paper)).
 
 Interval type-2 adaptive neuro-fuzzy inference systems (IT2-ANFIS) that predict the daily energy consumption of
 Melbourne's Eastern Treatment Plant. The project compares three models:
 
 | Model | Description |
 |---|---|
-| **7 rules** (`M7`) | The 7-rule IT2-ANFIS of Khaled et al. (2026), from the original repository |
+| **7 rules** (`M7`) | The 7-rule IT2-ANFIS of Khaled et al. (2026), re-implemented from the paper's equations |
 | **9 rules** (`M9`) | `M7` plus 2 rules placed where `M7` makes systematic errors |
 | **9 rules + PSO** (`M9_pso`, `M9_pso_ridge`, `M9_tscv`) | The 2 new rules tuned by Particle Swarm Optimisation; `M9_tscv` is the time-aware variant for forecasting |
 
@@ -93,11 +99,12 @@ The full set of options and the output-file formats are in [docs/implementation.
 | What | Credit |
 |---|---|
 | IT2-ANFIS method, research idea, paper | **Qusai Khaled, Bahjat Mallak, Uzay Kaymak, Laura Genga**: Eindhoven University of Technology and Haskoning |
-| Original code base: IT2-ANFIS model, data loading and cleaning, mutual-information feature selection, baselines, notebooks, tests, CI | **Qusai Khaled**, [github.com/QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ) |
+| Original code base: data loading and cleaning, mutual-information feature selection, configuration, training / sweep / plotting scripts, notebooks, tests, CI, project layout | **Qusai Khaled**, [github.com/QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ) |
 | Dataset | **Faramarz Bagherzadeh** et al., Melbourne Water Eastern Treatment Plant data ([Mendeley Data](https://doi.org/10.17632/pprkvz3vbd.1); [PSEP 2021](https://doi.org/10.1016/j.psep.2021.08.040)) |
 | Underlying techniques | fuzzy sets (Zadeh), TSK rules (Takagi and Sugeno), ANFIS (Jang), type-2 fuzzy sets (Mendel and John), PSO (Kennedy and Eberhart). Full references are in [docs/fuzz.md](docs/fuzz.md). |
 
 **What this fork adds** on top of the original work:
+- the model implementations in `src/models/`, written from the paper's equations because the original repository does not include them (IT2-ANFIS, zero- and first-order ANFIS, comparison models);
 - the 9-rule and 9-rule + PSO extensions;
 - the multi-protocol experiment runner;
 - stored results;
@@ -107,6 +114,22 @@ The full set of options and the output-file formats are in [docs/implementation.
 These additions build directly on the authors' model and code, and are not presented as independent research.
 
 **License:** the original repository does not state a license. All rights to the original code remain with its author. Please contact the original authors before reusing their code beyond reference and study.
+
+## Differences from the paper
+
+The 7-rule model here follows the paper's equations, but it is an independent implementation. Its results are close to the paper's but not identical:
+
+| Aspect | Paper | This repository |
+|---|---|---|
+| Model code | authors' implementation (not published) | own implementation from the paper's equations |
+| Rule positions (c1, c2) | trained by autodiff with gradient clipping | placed by Latin-hypercube sampling, then frozen |
+| Consequent training | mini-batch gradient descent, adaptive learning rate | Adam with early stopping |
+| L1 / L2 penalties | 0.05 / 0.001 | 0.005 / 0.01 |
+| Type-reduction weight q | fixed at 0.5 | starts at 0.5, learned |
+| Splits and seeds | random 64/16/20, 10 runs | random 64/16/20, 10 seeds (different splits) |
+| Test MSE, 7 rules | 1671.2 MWh² | 1616.3 ± 115.6 MWh² |
+
+Because of these differences, the baseline numbers here should not be read as a reproduction of the paper's table. The 7 vs 9 vs 9 + PSO comparisons are internally consistent, since every model uses the same implementation, splits and seeds.
 
 ## Citation
 

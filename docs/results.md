@@ -1,8 +1,12 @@
 # Results: 7 rules vs 9 rules vs 9 rules + PSO
 
-> **Attribution.** The 7-rule IT2-ANFIS, its method and the original code are by Khaled, Mallak, Kaymak and Genga (2026,
-> [arXiv:2601.18897](https://arxiv.org/abs/2601.18897); code [QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ)).
-> Dataset: Bagherzadeh (2021), [doi:10.17632/pprkvz3vbd.1](https://doi.org/10.17632/pprkvz3vbd.1).
+> **Attribution.** The IT2-ANFIS method is by Khaled, Mallak, Kaymak and Genga (2026,
+> [arXiv:2601.18897](https://arxiv.org/abs/2601.18897)), and the original code base is
+> [QusaiKhaled/XUQ](https://github.com/QusaiKhaled/XUQ). Dataset: Bagherzadeh (2021), [doi:10.17632/pprkvz3vbd.1](https://doi.org/10.17632/pprkvz3vbd.1).
+>
+> **Baseline discrepancy.** The original repository does not include its model files, so all models here, including the
+> 7-rule baseline, are this project's own implementation of the paper's equations. Baseline numbers can therefore differ
+> from the paper's; see §6.
 
 Every number below is read from existing result files:
 
@@ -107,7 +111,13 @@ Runtimes are means per run on CPU. The 9-rule runtimes include training the 7-ru
 
 ## 6. Limitations
 
-- The 7-rule model is the implementation in the original repository, which follows the paper's equations. Two differences from the paper's description: q is learned rather than fixed at 0.5, and Adam replaces mini-batch gradient descent. Its numbers are therefore close to the paper's but not identical.
+- **The 7-rule baseline is this project's own implementation.** The original repository does not publish its model files, so the model was written from the paper's equations. It differs from the paper in four ways:
+  - the rule positions are frozen, not trained;
+  - Adam replaces adaptive mini-batch gradient descent;
+  - L1 / L2 are 0.005 / 0.01, not 0.05 / 0.001;
+  - q is learned instead of fixed at 0.5.
+
+  The splits and seeds also differ from the paper's runs. Its random-split MSE (1616.3) is therefore 3 % below the paper's reported 1671.2. Do not read it as a reproduction of the paper's table. The 7 vs 9 vs 9 + PSO comparisons are internally consistent, because all models share the same implementation, splits and seeds.
 - The data come from one plant. The chronological holdout is one 14-month period, and rolling has only 5 folds.
 - **Seeds in the chronological protocol change only the initialisation**, so the sd there measures optimiser noise.
 - MAPE (reported in the paper) was not computed.
